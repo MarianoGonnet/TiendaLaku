@@ -101,16 +101,53 @@ body {
     color: #646cff; /* Color de enlace al pasar el cursor */
   }
 
+  #email {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 320px; /* Ajusta la posición del email */
+    background-color: #d4bd51; /* Fondo amarillo */
+    display: flex; /* Para centrar el ícono */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+  }
+  
+  #email img {
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: 50px;
+  }
+  
+  #instagram {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 210px; /* Ajusta para colocar encima del WhatsApp */
+    background-color: #d4bd51;
+  }
+  
+  #instagram img {
+    width: 100px;
+    height: 100px;
+  }
+  
   #whatsapp {
     position: fixed;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     right: 0px;
-    bottom: 100px;
+    bottom: 100px; /* Mantén la posición del WhatsApp */
     background-color: #d4bd51;
   }
-#whatsapp img{
+  
+  #whatsapp img {
     width: 100px;
-    height: 100px; 
-} 
+    height: 100px;
+  }
+  
+  
