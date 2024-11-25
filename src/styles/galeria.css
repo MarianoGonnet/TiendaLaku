@@ -100,4 +100,17 @@ body {
   nav a:hover {
     color: #646cff; /* Color de enlace al pasar el cursor */
   }
-  
+
+  #whatsapp {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 100px;
+    background-color: #d4bd51;
+  }
+#whatsapp img{
+    width: 100px;
+    height: 100px; 
+} 
