@@ -78,7 +78,7 @@ h2 {
   border-radius: 5px;
   font-size: 1rem;
   background-color: #ffffff;
-  color: white;
+  color: #000;
   transition: border-color 300ms, box-shadow 300ms;
 }
 
