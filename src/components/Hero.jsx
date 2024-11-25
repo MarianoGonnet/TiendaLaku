@@ -10,12 +10,7 @@ const Hero = () => {
         <img src={logo} alt="Indumentaria Laku Logo" className="hero-logo" />
         <h2>INDUMENTARIA LAKU</h2>
         <p>placeholder placeholder placeholder placeholder</p>
-        <button 
-  className="hero-button" 
-  onClick={() => window.location.href = '/styles/galeria.html'}
->
-  ACCEDE A TU ESTILO
-</button>
+        <button className="hero-button"><a href="../src/styles/galeria.html">ACCEDE A TU ESTILO</a></button>
       </div>
       <div className="hero-image">
         <img src={heroImage} alt="Modelo" />
