@@ -1,65 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     background: #1e1e1e;
     color: white;
-  }
-  
-  header {
+}
+
+header {
     background: #d4bd51;
     padding: 1.5rem;
     text-align: center;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin: 0;
-  }
-  
-  .logo-container {
+}
+
+.logo-container {
     text-align: center;
     margin: 2rem 0;
-  }
-  
-  .logo {
+}
+
+.logo {
     max-width: 120px;
     height: auto;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
     margin: 1.5rem 0;
     font-size: 2rem;
-  }
-  
-  .gallery {
+}
+
+/* Estilo modificado para la galería de imágenes */
+.gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Asegura que las imágenes se ajusten bien a la pantalla */
-    gap: 20px; /* Espacio entre imágenes */
-    padding: 20px; /* Espacio alrededor de las imágenes */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espacio reducido entre imágenes */
+    padding: 10px; /* Relleno reducido */
     max-width: 1200px; /* Limita el ancho máximo de la galería */
     margin: 0 auto; /* Centra la galería en la página */
-  }
-  
-  .gallery-item {
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
+/* Para el efecto de ladrillos en el grid: desfasado verticalmente */
+.gallery-item:nth-child(odd) {
+    margin-top: 20px; /* Menos desplazamiento para un efecto más sutil */
+}
+
+/* Evitar que el primer elemento tenga desplazamiento */
+.gallery-item:nth-child(1) {
+    margin-top: 0; /* Sin desplazamiento en el primer elemento */
+}
+
+.gallery-item {
     position: relative; /* Para posicionar el overlay */
     overflow: hidden; /* Evita que el contenido salga del contenedor */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .gallery-item img {
-    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%; /* Las imágenes ocupan todo el contenedor */
+    height: 100%; /* Las imágenes ocupan todo el alto del contenedor */
+    object-fit: cover; /* Asegura que la imagen ocupe todo el contenedor sin deformarse */
     display: block;
     transition: transform 0.3s;
-  }
-  
-  .gallery-item:hover img {
+}
+
+.gallery-item:hover img {
     transform: scale(1.1); /* Efecto de zoom */
-  }
-  
-  .details {
+}
+
+.details {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -70,39 +91,39 @@ body {
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
-  }
-  
-  .gallery-item:hover .details {
+}
+
+.gallery-item:hover .details {
     opacity: 1; /* Muestra los detalles al pasar el cursor */
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 1rem;
     background: #333333;
     color: white;
     margin-top: 2rem;
-  }
-  
-  nav {
+}
+
+nav {
     text-align: center; /* Centrar los enlaces */
     margin-top: 2rem; /* Espacio superior */
-  }
-  
-  nav a {
+}
+
+nav a {
     display: block; /* Cada enlace en una nueva línea */
     margin-bottom: 1rem; /* Espacio entre los enlaces */
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     transition: color 300ms;
-  }
-  
-  nav a:hover {
-    color: #646cff; /* Color de enlace al pasar el cursor */
-  }
+}
 
-  #email {
+nav a:hover {
+    color: #646cff; /* Color de enlace al pasar el cursor */
+}
+
+#email {
     position: fixed;
     width: 100px;
     height: 100px;
@@ -114,14 +135,14 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
-  }
-  
-  #email img {
+}
+
+#email img {
     width: 50px; /* Ajusta el tamaño del ícono */
     height: 50px;
-  }
-  
-  #instagram {
+}
+
+#instagram {
     position: fixed;
     width: 100px;
     height: 100px;
@@ -129,14 +150,14 @@ body {
     right: 0px;
     bottom: 210px; /* Ajusta para colocar encima del WhatsApp */
     background-color: #d4bd51;
-  }
-  
-  #instagram img {
+}
+
+#instagram img {
     width: 100px;
     height: 100px;
-  }
-  
-  #whatsapp {
+}
+
+#whatsapp {
     position: fixed;
     width: 100px;
     height: 100px;
@@ -144,11 +165,9 @@ body {
     right: 0px;
     bottom: 100px; /* Mantén la posición del WhatsApp */
     background-color: #d4bd51;
-  }
-  
-  #whatsapp img {
+}
+
+#whatsapp img {
     width: 100px;
     height: 100px;
-  }
-  
-  
+}
