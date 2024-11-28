@@ -30,6 +30,3 @@
   transition: transform 200ms; /* Solo mantiene el efecto de desplazamiento */
   }
 
-  .hero-image{
-  padding: 4rem;
-  }

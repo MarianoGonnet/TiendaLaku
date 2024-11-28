@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SocialLinks from './components/SocialLinks';
+import Flotantes from './components/flotantes';
 import './styles/contacto.css';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <SocialLinks />
+      <Flotantes/>
     </div>
   );
 };

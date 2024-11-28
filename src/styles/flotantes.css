@@ -1,0 +1,40 @@
+:root{
+    --ancho-de-barra: 50px;
+}
+
+#flotantes{
+    width: var(--ancho-de-barra);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:calc(var(--ancho-de-barra)/3);
+}
+
+.flotante{
+ height: var(--ancho-de-barra);
+ width: var(--ancho-de-barra);
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ background-color: #d4bd51;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.flotante a img{
+    display: block;
+    margin: 0;
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    align-self:center;
+}

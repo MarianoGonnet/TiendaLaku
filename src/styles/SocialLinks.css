@@ -7,6 +7,8 @@
     padding: 4rem;
     background-color: #ffffff;
     color: #000000;
+    margin:0;
+    bottom:0px;
   }
   .social-links a {
     color: rgb(0, 0, 0);
