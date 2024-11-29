@@ -25,13 +25,6 @@ function App() {
 
       <SocialLinks />
       <Flotantes/>
-
-      {/* Enlaces de navegación */}
-      <div>
-        <Link to='/'><button>Tienda Laku</button></Link>
-        <Link to='/galeria'><button>Galería</button></Link>
-        <Link to='/contacto'><button>Contacto</button></Link>
-      </div>
     </Router>
   )
 }
