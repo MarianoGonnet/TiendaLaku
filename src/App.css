@@ -1,5 +1,20 @@
-#root {
+section{
+  margin-top:var(--navbar-height);
+}
+
+body{
+  margin-top:var(--navbar-height);
+  background-color: #1e1e1e;
   margin: 0;
+  font-family: 'Leelawadee';
+}
+
+#root {
+  margin-top:var(--navbar-height);
+  margin: 0;
+  background-color: #1e1e1e;
+  width: 100vw;
+  margin:0;
 }
 
 h1, h2{

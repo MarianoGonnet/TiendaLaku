@@ -1,13 +1,19 @@
+:root{
+  --navbar-height:60px;
+}
+
 .navbar {
   position: fixed;
+  top:0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   background-color: #d4bd51;
-  color: #070707;
+  color: #1e1e1e;
   margin: 0;
-  height: 60px; /* Ajusta según el tamaño deseado */
+  height: var(--navbar-height);
+  z-index: 500;
 }
 
 .navbar a {
@@ -19,12 +25,13 @@
 }
 #logo-nav {
   position: absolute;
-  height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  height: 50px;
 }
 
 .navbar h1 {
   font-family: 'NeoTech';
-  font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
-  text-align: center; /* Asegura el centrado del texto */
+  font-size: 2rem; 
+  text-align: center;
   margin: 0;
+  color: #1e1e1e
 }

@@ -1,75 +1,79 @@
 .hero, #seccion-espiritu {
-    font-family: 'NeoTech';
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #1e1e1e;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-  }
-  
-  .hero-content, #texto-espiritu {
-    display: flex;
-    height: inherit;
-    width: 25vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-    padding: 0 7rem;
-    text-align: center;
-  }
-
-  .hero-content h2 {
-    margin-top: -1rem;
-  }
-
-  .hero-logo{
-    width: 50%;
-  }
-  
-  .hero-content p, #texto-espiritu p {
-    color:aliceblue;
-    text-align:justify;
-    font-size: 1.5rem;
-    font-family: 'Leelawadee';
-  }
-
-  .hero-image {
-    display: block;
-    height: auto;
-  }
-
-
-  .hero-button {
-    margin-top: 2rem;
   font-family: 'NeoTech';
-  padding: 1rem 2rem;
-  background-color: #d4bd51; /* Color dorado fijo */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: transform 200ms; /* Solo mantiene el efecto de desplazamiento */
-  }
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1e1e1e;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-content, #texto-espiritu {
+  display: flex;
+  min-height: max-content;
+  width: 25vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  padding: 0 7rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+  margin-top: -1rem;
+}
+
+.hero-logo{
+  width: 50%;
+}
+
+.hero-content p, #texto-espiritu p {
+  color:aliceblue;
+  text-align:justify;
+  font-size: 1.5rem;
+  font-family: 'Leelawadee';
+  min-width: 400px;
+}
+
+.hero-image {
+  display: block;
+  height: auto;
+}
+
+
+.hero-button {
+  margin-top: 2rem;
+font-family: 'NeoTech';
+padding: 1rem 2rem;
+background-color: #d4bd51; /* Color dorado fijo */
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 2rem;
+cursor: pointer;
+transition: transform 200ms; /* Solo mantiene el efecto de desplazamiento */
+white-space: nowrap;
+}
 
 .hero-button a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 #divisor{
-  height: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:#1e1e1e;
+height: 100px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+color:#1e1e1e;
 }
 
 #divisor h1{
-  font-family: 'NeoTech';
-  font-size: 3rem;
+font-family: 'NeoTech';
+font-size: 3rem;
+color:#1e1e1e;
 }
 
 

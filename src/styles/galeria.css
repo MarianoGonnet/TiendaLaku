@@ -1,26 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-body {
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #1e1e1e;
-    color: white;
-}
-
-header {
-    background: #d4bd51;
-    padding: 1.5rem;
-    text-align: center;
-}
-
 h1 {
     margin: 0;
+    font-family: 'NeoTech';
+    color:#fff;
+    text-align: center;
+    margin-bottom:2rem;
 }
 
 .logo-container {
     text-align: center;
-    margin: 2rem 0;
+    margin-top: var(--navbar-height);
+    padding: 2rem 0;
 }
 
 .logo {
@@ -28,20 +17,23 @@ h1 {
     height: auto;
 }
 
-h2 {
-    text-align: center;
-    margin: 1.5rem 0;
-    font-size: 2rem;
-}
-
 /* Estilo modificado para la galería de imágenes */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 10px; /* Espacio reducido entre imágenes */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Espacio reducido entre imágenes */
     padding: 10px; /* Relleno reducido */
-    max-width: 1200px; /* Limita el ancho máximo de la galería */
+    max-width: 1200px;
     margin: 0 auto; /* Centra la galería en la página */
+    padding: 20px;
+}
+
+.columna-galeria{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
 }
 
 /* Para pantallas más pequeñas */
@@ -49,16 +41,6 @@ h2 {
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
     }
-}
-
-/* Para el efecto de ladrillos en el grid: desfasado verticalmente */
-.gallery-item:nth-child(odd) {
-    margin-top: 20px; /* Menos desplazamiento para un efecto más sutil */
-}
-
-/* Evitar que el primer elemento tenga desplazamiento */
-.gallery-item:nth-child(1) {
-    margin-top: 0; /* Sin desplazamiento en el primer elemento */
 }
 
 .gallery-item {
@@ -69,8 +51,8 @@ h2 {
 }
 
 .gallery-item img {
-    width: 100%; /* Las imágenes ocupan todo el contenedor */
-    height: 100%; /* Las imágenes ocupan todo el alto del contenedor */
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto;
     object-fit: cover; /* Asegura que la imagen ocupe todo el contenedor sin deformarse */
     display: block;
     transition: transform 0.3s;
@@ -97,77 +79,3 @@ h2 {
     opacity: 1; /* Muestra los detalles al pasar el cursor */
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333333;
-    color: white;
-    margin-top: 2rem;
-}
-
-nav {
-    text-align: center; /* Centrar los enlaces */
-    margin-top: 2rem; /* Espacio superior */
-}
-
-nav a {
-    display: block; /* Cada enlace en una nueva línea */
-    margin-bottom: 1rem; /* Espacio entre los enlaces */
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    transition: color 300ms;
-}
-
-nav a:hover {
-    color: #646cff; /* Color de enlace al pasar el cursor */
-}
-
-#email {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    right: 0px;
-    bottom: 320px; /* Ajusta la posición del email */
-    background-color: #d4bd51; /* Fondo amarillo */
-    display: flex; /* Para centrar el ícono */
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
-}
-
-#email img {
-    width: 50px; /* Ajusta el tamaño del ícono */
-    height: 50px;
-}
-
-#instagram {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    right: 0px;
-    bottom: 210px; /* Ajusta para colocar encima del WhatsApp */
-    background-color: #d4bd51;
-}
-
-#instagram img {
-    width: 100px;
-    height: 100px;
-}
-
-#whatsapp {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    right: 0px;
-    bottom: 100px; /* Mantén la posición del WhatsApp */
-    background-color: #d4bd51;
-}
-
-#whatsapp img {
-    width: 100px;
-    height: 100px;
-}

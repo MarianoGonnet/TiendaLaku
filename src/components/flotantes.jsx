@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/flotantes.css';
 import email from '../assets/galeria/mail-blanco.png'
 import instagram from '../assets/galeria/insta-blanco.png'
@@ -11,9 +12,9 @@ return (
 <>
 <div id='flotantes'>
     <div id="email" className='flotante'>
-        <a href="contacto.html" target="_self">
+        <Link to='/contacto'>
         <img src={email} alt="Email" />
-        </a>
+        </Link>
     </div>
     <div id="instagram" className='flotante'>
         <a href="https://www.instagram.com/laku.indumentaria/" target="_blank" rel="noopener noreferrer">
