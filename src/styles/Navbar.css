@@ -1,15 +1,30 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-    color: #070707;
-    margin:0;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-  }
-  
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: #d4bd51;
+  color: #070707;
+  margin: 0;
+  height: 60px; /* Ajusta según el tamaño deseado */
+}
+
+.navbar a {
+  position: absolute;
+  left: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#logo-nav {
+  position: absolute;
+  height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.navbar h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+  text-align: center; /* Asegura el centrado del texto */
+  margin: 0;
+}

@@ -1,15 +1,12 @@
 import React from 'react';
 import '../Styles/Navbar.css'; // Ruta corregida
+import logo from '../assets/Logo.png'
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Indumentaria Laku</h1>
-      <ul>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#galeria">Galería</a></li>
-      </ul>
+      <a href='../../index.html'><img id='logo-nav' src={logo}></img></a>
+      <h1>ACCEDÉ A TU ESTILO</h1>
     </nav>
   );
 };
