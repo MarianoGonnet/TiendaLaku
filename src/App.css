@@ -5,3 +5,7 @@
 h1, h2{
   letter-spacing: 0.5rem;
 }
+
+a, a:visited, a:active {
+  color: #1e1e1e
+}
