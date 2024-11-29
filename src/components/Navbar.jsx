@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href='../../index.html'><img id='logo-nav' src={logo}></img></a>
-      <h1>ACCEDÉ A TU ESTILO</h1>
+      <h1>ACCEDE A TU ESTILO</h1>
     </nav>
   );
 };

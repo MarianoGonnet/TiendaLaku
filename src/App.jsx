@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import SocialLinks from './components/SocialLinks';
 import Flotantes from './components/flotantes';
 import './styles/contacto.css';
+import './styles/fuentes.css';
+
 
 const App = () => {
   return (
