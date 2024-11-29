@@ -1,7 +1,7 @@
 .hero, #seccion-espiritu {
     font-family: 'NeoTech';
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #1e1e1e;
     height: 100vh;
     overflow: hidden;
@@ -11,12 +11,12 @@
   .hero-content, #texto-espiritu {
     display: flex;
     height: inherit;
+    width: 25vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:1rem;
-    padding: 0 7rem 0 7rem;
-    top: 400px;
+    padding: 0 7rem;
     text-align: center;
   }
 
@@ -37,7 +37,7 @@
 
   .hero-image {
     display: block;
-width: 50%;
+    height: auto;
   }
 
 
