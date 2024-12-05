@@ -34,8 +34,8 @@ const GaleriaMobile = () => {
   ];
 
   return (
-    <section>
-      <h1 id="h2-galeria">NUESTROS LOOKS</h1>
+    <section id='seccion-galeria-mobile'>
+      <Link to='/'><img src={logo} alt="Logo de Laku" class="logo-mobile"></img></Link>
       <div className="gallery-mobile">
         <div className="columna-galeria-mobile">
           {images.map((image, index) => (

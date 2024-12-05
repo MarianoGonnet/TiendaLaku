@@ -1,6 +1,8 @@
 :root{
     --navbar-height:60px;
   }
+
+
   
   #link-logo-nav-mobile {
     width: 100vw;
@@ -19,7 +21,7 @@
 
 
   .navbar-mobile {
-    position: absolute;
+    position: fixed;
     top:0;
     width: 100vw;
     height: var(--navbar-height);
@@ -34,7 +36,8 @@
   }
   
   .navbar-mobile a {
-    max-height: min-content;
+    font-family: 'NeoTech';
+    min-width: max-content;
     max-width: min-content;
     display: flex; /* Necesario para centrar contenido del <a> */
     align-items: center;
