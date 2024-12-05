@@ -24,12 +24,23 @@
  -ms-border-radius: 50%;
  -o-border-radius: 50%;
  background-color: #d4bd51;
-display: flex;
-justify-content: center;
-align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.1s ease-in ;
+ -webkit-transition: all 0.1s ease-in ;
+ -moz-transition: all 0.1s ease-in ;
+ -ms-transition: all 0.1s ease-in ;
+ -o-transition: all 0.1s ease-in ;
 }
 
-
+.flotante:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 
 .flotante a img{
     display: block;

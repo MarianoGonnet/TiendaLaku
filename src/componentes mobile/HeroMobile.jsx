@@ -10,9 +10,10 @@ const HeroMobile = () => {
   return (
     <section>
      <div className="hero-mobile">
-     <div className='degrade-mobile'></div>
+    
      <img id='fondo-hero-mobile' src={heroImage} alt="Modelo" />
-     
+     <div className='degrade-mobile'></div>
+
       <div className="hero-content-mobile">
         <img src={logo} alt="Indumentaria Laku Logo" className="hero-logo-mobile" />
         <h2 className='titulos-hero-mobile'>INDUMENTARIA LAKU</h2>

@@ -1,20 +1,17 @@
 .hero-mobile, #seccion-espiritu-mobile {
     font-family: 'NeoTech';
-    display: flex;
-    justify-content: flex-end   ;
     background-color: #1e1e1e;
     color: white;
-    height: 100lvh;
+    height: 100svh;
     overflow: hidden;
     margin: 0;
     position: relative;
-    z-index: 1;
   }
 
   #fondo-hero-mobile {
     position: absolute;
     top: 0;
-    height: 100lvh;
+    height: 100vh;
     z-index: 0;
   }
 
@@ -22,20 +19,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, transparent 5%,red 95%);
+    width: 100vw;
+    height: 100svh;
+    background: linear-gradient(to bottom, transparent 5%,#1e1e1e 60%, #1e1e1e 70%);
     z-index: 100;
   }
   
   .hero-content-mobile, #texto-espiritu-mobile {
+    position: relative;
     display: flex;
     min-height: min-content;
     width: 100vw;
+    height: 100svh;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap:1rem;
-    padding: 4rem 0;
     text-align: center;
     color: #fff;
     z-index: 500;
