@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com'
-import '../styles/contacto.css'
-import logo from '../assets/logo.png';
+import '../stylesMobile/contactoMobile.css'
 import modeloContacto from '../assets/galeria/ModeloContacto.jpg'
 
 function ContactoMobile() {
@@ -42,34 +41,27 @@ function ContactoMobile() {
 
     return(
         <>
-        <div id="contacto">
-
-    <div className="contact-form-container">
-      <img src={logo} alt="Logo de Laku" className="logo"></img>
+        <div id="contacto-mobile">
+        <img id='fondo-contacto-mobile' src={modeloContacto} alt="ModeloContacto"></img>
+        <div className='degrade-mobile'></div>
+    <div className="contact-form-container-mobile">
 
       <h2>CONTACTO</h2>
 
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form onSubmit={handleSubmit} className="contact-form-mobile">
         <div>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
+          <input type="text" id="nombre-mobile" name="nombre" placeholder="Nombre" required value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
         </div>
         <div>
-          <input type="email" id="email" name="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}></input>
+          <input type="email" id="email-mobile" name="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}></input>
         </div>
         <div>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required value={mensaje} onChange={(e) => setMensaje(e.target.value)}></textarea>
+          <textarea id="mensaje-mobile" name="mensaje" rows="5" placeholder="Mensaje" required value={mensaje} onChange={(e) => setMensaje(e.target.value)}></textarea>
         </div>
         <div>
           <button type="submit">CONTACTANOS</button>
         </div>
       </form>
-    </div>
-
-    service_iviq0sr
-
-
-    <div className="image-container">
-      <img src={modeloContacto} alt="ModeloContacto"></img>
     </div>
     </div>
         </>

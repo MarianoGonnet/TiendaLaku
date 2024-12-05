@@ -11,6 +11,7 @@
     color: #1e1e1e;
     margin:0;
     bottom:0px;
+    z-index: 9000;
   }
   
   .social-links a {

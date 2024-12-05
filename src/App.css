@@ -1,21 +1,18 @@
-
-html, body{
+*{
+  outline: 1px red solid;
+}
+body{
   background-color: #1e1e1e;
-  margin: 0;
   font-family: 'Leelawadee';
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-
 }
 
+
 #root {
-  margin-top:var(--navbar-height);
   margin: 0;
   background-color: #1e1e1e;
   width: 100vw;
-  margin:0;
 }
 
 h1, h2{
