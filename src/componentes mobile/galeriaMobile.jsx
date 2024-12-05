@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/galeria.css'
+import '../stylesMobile/galeriaMobile.css';
 import logo from '../assets/logo.png';
 import col1img1 from '../assets/galeria/remeraBlanca.jpg';
 import col1img2 from '../assets/galeria/camperaNegra.jpg';
@@ -12,82 +12,46 @@ import col3img1 from '../assets/galeria/babuchaPuma.jpg';
 import col3img2 from '../assets/galeria/buzoNegro.jpg';
 import col3img3 from '../assets/galeria/buzoAdidas.jpg';
 
-
-
-
 const GaleriaMobile = () => {
+  const [zoom, setZoom] = useState([false, false, false, false, false, false, false, false, false]);
+
+  const handleZoom = (index) => {
+    const newZoomState = [...zoom];
+    newZoomState[index] = !newZoomState[index];
+    setZoom(newZoomState);
+  };
+
+  const images = [
+    { src: col1img1, alt: "Remera Blanca", texto:'Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.' },
+    { src: col1img2, alt: "Campera Negra", texto:'Campera Negra - Estilo moderno y versátil, perfecta para las noches frías.' },
+    { src: col1img3, alt: "Gorra Negra", texto:'Gorra Negra - Look urbano y deportivo, ideal para combinar con cualquier estilo.' },
+    { src: col2img1, alt: "Buzo Marrón", texto:'Buzo Marrón - Confort y calidez, diseñado para los días más frescos con un toque de estilo.' },
+    { src: col2img2, alt: "Campera Marrón", texto:'Campera Marrón - Elegante y práctica, mantén el estilo sin sacrificar comodidad.' },
+    { src: col2img3, alt: "Camisa de Cuadros", texto:'Camisa de Cuadros - Un clásico de todos los tiempos, con un toque moderno para cualquier ocasión.' },
+    { src: col3img1, alt: "Babucha Puma", texto:'Babucha Puma - Cómoda y de calidad, ideal para el deporte o un día relajado en casa.' },
+    { src: col3img2, alt: "Buzo Negro", texto:'Buzo Negro - Básico y elegante, un esencial en cualquier armario para un look casual.' },
+    { src: col3img3, alt: "Buzo Adidas", texto:'Buzo Adidas - Deportivo y cómodo, con el estilo único de una marca líder en ropa deportiva.' }
+  ];
+
   return (
     <section>
-    <div class="logo-container">
-      <Link to='/'><img src={logo} alt="Logo de Laku" class="logo"></img></Link>
-    </div>
-    <h1>GALERIA</h1>
-    <div className="gallery">
-        <div className='columna-galeria'>
-        <div className="gallery-item">
-          <img src={col1img1} alt="Remera Blanca"></img>
-          <div className="details">
-            <p>Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col1img2} alt="Campera Negra"></img>
-          <div className="details">
-            <p>Campera Negra - Estilo moderno y versátil, perfecta para las noches frías.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col1img3} alt="Gorra Negra"></img>
-          <div className="details">
-            <p>Gorra Negra - Look urbano y deportivo, ideal para combinar con cualquier estilo.</p>
-          </div>
-        </div>
-        </div>
-
-        <div className='columna-galeria'>
-        <div className="gallery-item">
-          <img src={col2img1} alt="Buzo Marrón"></img>
-          <div className="details">
-            <p>Buzo Marrón - Confort y calidez, diseñado para los días más frescos con un toque de estilo.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col2img2} alt="Campera Marrón"></img>
-          <div className="details">
-            <p>Campera Marrón - Elegante y práctica, mantén el estilo sin sacrificar comodidad.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col2img3} alt="Camisa de Cuadros"></img>
-          <div className="details">
-            <p>Camisa de Cuadros - Un clásico de todos los tiempos, con un toque moderno para cualquier ocasión.</p>
-          </div>
-        </div>
-        </div>
-
-        <div className='columna-galeria'>
-        <div className="gallery-item">
-          <img src={col3img1} alt="Babucha Puma"></img>
-          <div className="details">
-            <p>Babucha Puma - Cómoda y de calidad, ideal para el deporte o un día relajado en casa.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col3img2} alt="Buzo Negro"></img>
-          <div className="details">
-            <p>Buzo Negro - Básico y elegante, un esencial en cualquier armario para un look casual.</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src={col3img3} alt="Buzo Adidas"></img>
-          <div className="details">
-            <p>Buzo Adidas - Deportivo y cómodo, con el estilo único de una marca líder en ropa deportiva.</p>
-          </div>
+      <h1 id="h2-galeria">NUESTROS LOOKS</h1>
+      <div className="gallery-mobile">
+        <div className="columna-galeria-mobile">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`gallery-item-mobile ${zoom[index] ? "conZoom" : "sinZoom"}`}
+              onTouchStart={() => handleZoom(index)}
+            >
+              <img src={image.src} alt={image.alt} />
+              <div className="details">
+                <p>{image.texto}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      </div>
-      
-
     </section>
   );
 };

@@ -30,7 +30,7 @@
 
     background-color: #d4bd51;
     color: #1e1e1e;
-    z-index: 500;
+    z-index: 1000;
   }
   
   .navbar-mobile a {
