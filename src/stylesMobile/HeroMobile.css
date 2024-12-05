@@ -8,12 +8,18 @@
     position: relative;
   }
 
-  #fondo-hero-mobile {
+  #fondo-hero-mobile, #imagen-espiritu-mobile {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translate(-50%);
     height: 100vh;
     z-index: 0;
-  }
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
 
   .degrade-mobile {
     position: absolute;
@@ -26,6 +32,7 @@
   }
   
   .hero-content-mobile, #texto-espiritu-mobile {
+    padding-top: 5rem;
     position: relative;
     display: flex;
     min-height: min-content;
