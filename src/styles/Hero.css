@@ -11,16 +11,18 @@
 .hero-content, #texto-espiritu {
   display: flex;
   min-height: min-content;
-  width: 100vw;
+  width: 50vw;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap:1rem;
   padding: 0 7rem;
   text-align: center;
   color: #fff;
 }
-
+ .titulos-hero{
+  font-size: 2rem;
+ }
 
 .hero-logo{
   width: 50%;
@@ -30,7 +32,7 @@
   color:aliceblue;
   text-align:justify;
   font-family: 'Leelawadee';
-  font-size: 1em;
+  font-size: 2.5svh;
 }
 
 .hero-image {

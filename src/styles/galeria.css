@@ -1,6 +1,7 @@
-h1 {
+#h2-galeria {
     margin: 0;
     font-family: 'NeoTech';
+    font-size: 2rem;
     color:#fff;
     text-align: center;
     margin-bottom:2rem;
@@ -34,13 +35,6 @@ h1 {
     flex-direction: column;
     gap: 20px;
     width: 320px;
-}
-
-/* Para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
-    }
 }
 
 .gallery-item {

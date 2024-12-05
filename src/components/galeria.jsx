@@ -21,7 +21,7 @@ const Galeria = () => {
     <div class="logo-container">
       <Link to='/'><img src={logo} alt="Logo de Laku" class="logo"></img></Link>
     </div>
-    <h1>GALERIA</h1>
+    <h2 id='h2-galeria'>GALERIA</h2>
     <div className="gallery">
         <div className='columna-galeria'>
         <div className="gallery-item">

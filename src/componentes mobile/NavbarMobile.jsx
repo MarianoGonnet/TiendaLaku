@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Styles/NavbarMobile.css'; 
+import '../stylesMobile/NavbarMobile.css'
 import logo from '../assets/Logo.png'
 
 const NavbarMobile = () => {

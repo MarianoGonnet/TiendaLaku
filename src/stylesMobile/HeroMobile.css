@@ -1,0 +1,79 @@
+.hero-mobile, #seccion-espiritu-mobile {
+    font-family: 'NeoTech';
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1e1e1e;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .hero-content-mobile, #texto-espiritu-mobile {
+    display: flex;
+    min-height: min-content;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap:1rem;
+    padding: 0 7rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  .hero-logo-mobile {
+    width: 50%;
+  }
+  
+  .hero-content-mobile p, #texto-espiritu-mobile p {
+    color:red;
+    text-align:justify;
+    font-family: 'Leelawadee';
+    font-size: 1em;
+  }
+  
+  .hero-image-mobile {
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  .hero-button-mobile {
+    margin-top: 2rem;
+  font-family: 'NeoTech';
+  padding: 1rem 2rem;
+  background-color: #d4bd51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 200ms; 
+  white-space: nowrap;
+  }
+  
+  .hero-button-mobile a {
+  text-decoration: none;
+  }
+  
+  #divisor-mobile {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#1e1e1e;
+  }
+  
+  #divisor-mobile h1{
+    display: block;
+  font-family: 'NeoTech';
+  font-size: 3rem;
+  color:#1e1e1e;
+  }
+  
+  
+  
+  

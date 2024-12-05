@@ -21,5 +21,6 @@ h1, h2{
 }
 
 a, a:visited, a:active {
-  color: #1e1e1e
+  color: #1e1e1e;
+  text-decoration: none;
 }

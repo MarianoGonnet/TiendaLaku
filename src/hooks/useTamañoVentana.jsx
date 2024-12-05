@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 function useTamañoVentana() {
-  const [versionMobile, setVersionMobile] = useState(window.innerWidth <= 1000);
+  const [versionMobile, setVersionMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     function checkearSiMobile() {
-      setIsMobile(window.innerWidth <= 1000);
+      setIsMobile(window.innerWidth <= 768);
     }
 
     window.addEventListener('resize', checkearSiMobile);
