@@ -7,6 +7,7 @@ import ContactoMobile from './componentes mobile/contactoMobile'
 import Galeria from './components/galeria'
 import GaleriaMobile from './componentes mobile/galeriaMobile'
 import Flotantes from './components/flotantes'
+import FlotantesMobile from './componentes mobile/flotantesMobile'
 import Navbar from './components/Navbar'
 import NavbarMobile from './componentes mobile/NavbarMobile'
 import SocialLinks from './components/SocialLinks'
@@ -21,23 +22,15 @@ function App() {
   return (
 
     <Router>
-    {esMobile ? (
-      <NavbarMobile />
-    ) : (
-      <Navbar />
-    )}
-
-<Routes>
-  <Route path='/' element={ esMobile ? <HeroMobile/> : <Hero /> } />    
-  <Route path='/contacto' element={esMobile ? <ContactoMobile/> : <Contacto />} />
-  <Route path='/galeria' element={esMobile ? <GaleriaMobile/> : <Galeria />} />
-</Routes>
-
-
-<SocialLinks />
-<Flotantes/>
-
-  </Router>
+        {esMobile ? (<NavbarMobile />) : (<Navbar />)}
+        <Routes>
+          <Route path='/' element={ esMobile ? <HeroMobile/> : <Hero /> } />    
+          <Route path='/contacto' element={esMobile ? <ContactoMobile/> : <Contacto />} />
+          <Route path='/galeria' element={esMobile ? <GaleriaMobile/> : <Galeria />} />
+        </Routes>
+        <SocialLinks />
+        {esMobile ? (<FlotantesMobile/>) : (<Flotantes />)}
+    </Router>
   )
 }
 

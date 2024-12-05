@@ -30,10 +30,10 @@ const HeroMobile = () => {
     <div id='seccion-espiritu-mobile'>
       <img id='imagen-espiritu-mobile' src={spiritImage}></img>
       <div className='degrade-mobile'></div>
-      <div id="texto-espiritu-mobile-mobile">
-      <h2>ESPIRITU LIBRE</h2>
-      <p>Tienda Laku somos un pequeño emprendimiento con base en la ciudad de Mar del Plata. Nos apasiona la vida urbana al aire libre, la moda y el movimiento. Queremos traer el estilo a nuestra ciudad y para ello contamos con proveedores de prendas de primera calidad. Creemos en el acceso a la moda a precios razonables para que nuestros clientes puedan expresar su espíritu libre y rebelde sin barreras. Nuestras prendas son para los hombres de cualquier edad que quieran expresar nuestra misma pasión por la vida.</p>
-      <Link to="/galeria" className="hero-button-mobile">ACCEDE A TU ESTILO</Link>
+      <div id="texto-espiritu-mobile">
+        <h2>ESPIRITU LIBRE</h2>
+        <p>Tienda Laku somos un pequeño emprendimiento con base en la ciudad de Mar del Plata. Nos apasiona la vida urbana al aire libre, la moda y el movimiento. Queremos traer el estilo a nuestra ciudad y para ello contamos con proveedores de prendas de primera calidad. Creemos en el acceso a la moda a precios razonables para que nuestros clientes puedan expresar su espíritu libre y rebelde sin barreras. Nuestras prendas son para los hombres de cualquier edad que quieran expresar nuestra misma pasión por la vida.</p>
+        <Link to="/galeria" className="hero-button-mobile">ACCEDE A TU ESTILO</Link>
       </div>
     </div>
 

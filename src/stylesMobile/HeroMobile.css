@@ -1,11 +1,30 @@
 .hero-mobile, #seccion-espiritu-mobile {
     font-family: 'NeoTech';
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end   ;
     background-color: #1e1e1e;
-    height: 100vh;
+    color: white;
+    height: 100lvh;
     overflow: hidden;
     margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  #fondo-hero-mobile {
+    position: absolute;
+    top: 0;
+    height: 100lvh;
+    z-index: 0;
+  }
+
+  .degrade-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 5%,red 95%);
+    z-index: 100;
   }
   
   .hero-content-mobile, #texto-espiritu-mobile {
@@ -13,12 +32,13 @@
     min-height: min-content;
     width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
     gap:1rem;
-    padding: 0 7rem;
+    padding: 4rem 0;
     text-align: center;
     color: #fff;
+    z-index: 500;
   }
   
   
@@ -27,10 +47,10 @@
   }
   
   .hero-content-mobile p, #texto-espiritu-mobile p {
-    color:red;
     text-align:justify;
     font-family: 'Leelawadee';
     font-size: 1em;
+    max-width: 80vw;
   }
   
   .hero-image-mobile {
@@ -42,16 +62,16 @@
   
   .hero-button-mobile {
     margin-top: 2rem;
-  font-family: 'NeoTech';
-  padding: 1rem 2rem;
-  background-color: #d4bd51;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: transform 200ms; 
-  white-space: nowrap;
+    font-family: 'NeoTech';
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #d4bd51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 200ms; 
+    white-space: nowrap;
   }
   
   .hero-button-mobile a {
@@ -59,7 +79,7 @@
   }
   
   #divisor-mobile {
-  height: 100px;
+  height: max-content;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -72,6 +92,7 @@
   font-family: 'NeoTech';
   font-size: 3rem;
   color:#1e1e1e;
+  text-align: center;
   }
   
   

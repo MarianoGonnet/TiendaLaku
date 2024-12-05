@@ -5,8 +5,8 @@ import logo from '../assets/Logo.png'
 
 const NavbarMobile = () => {
   return (
-    <nav className="navbar">
-      <Link id='link-logo-nav' to='/'><img id='logo-nav' src={logo}></img></Link>
+    <nav className="navbar-mobile">
+      <Link id='link-logo-nav-mobile' to='/'><img id='logo-nav-mobile' src={logo}></img></Link>
     </nav>
   );
 };
