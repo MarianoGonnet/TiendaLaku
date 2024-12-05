@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     gap:calc(var(--ancho-de-barra)/3);
+    z-index: 1000;
 }
 
 .flotante{
