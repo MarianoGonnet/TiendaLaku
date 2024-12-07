@@ -1,4 +1,8 @@
 .hero-mobile, #seccion-espiritu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     font-family: 'NeoTech';
     background-color: #1e1e1e;
     color: white;
@@ -37,6 +41,7 @@
     display: flex;
     min-height: min-content;
     width: 100vw;
+    max-width: 400px;
     height: 100svh;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +55,8 @@
   
   .hero-logo-mobile {
     width: 50%;
+    max-width: 200px;
+    height: auto;
   }
   
   .hero-content-mobile p, #texto-espiritu-mobile p {

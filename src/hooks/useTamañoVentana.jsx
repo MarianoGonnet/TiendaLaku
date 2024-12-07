@@ -5,11 +5,12 @@ function useTamañoVentana() {
 
   useEffect(() => {
     function checkearSiMobile() {
-      setIsMobile(window.innerWidth <= 768);
+      setVersionMobile(window.innerWidth <= 768);
     }
 
     window.addEventListener('resize', checkearSiMobile);
-    return () => window.removeEventListener('resize', checkearSiMobile);
+
+    return () => { window.removeEventListener('resize', checkearSiMobile); }
   }, []);
 
   return versionMobile;
