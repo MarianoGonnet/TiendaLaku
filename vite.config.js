@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/TiendaLaku/',  // <-- esta línea agregala
   plugins: [react()],
+  base: '/TiendaLaku/',
 })
