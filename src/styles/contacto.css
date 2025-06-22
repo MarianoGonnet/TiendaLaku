@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   height: 100vh;
   overflow: hidden;
-  align-items: flex-start;
 }
 
 .logo {
@@ -27,7 +26,7 @@
   color: #fff;
 }
 
-h2 {
+.contact-form-container h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -95,15 +94,16 @@ white-space: nowrap;
   transform: translateY(-2px); /* Mantiene el desplazamiento al pasar el cursor */
 }
 .image-container {
-  flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
   max-width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .image-container img {
-  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover ;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }

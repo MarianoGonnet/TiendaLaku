@@ -1,25 +1,33 @@
+#seccion-galeria-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
 #h2-galeria {
     margin: 0;
     font-family: 'NeoTech';
     font-size: 2rem;
     color:#fff;
     text-align: center;
-    margin-bottom:2rem;
+    margin-top: 5rem;
 }
 
 .logo-container {
     text-align: center;
     margin-top: var(--navbar-height);
-    padding: 2rem 0;
 }
 
-.logo {
+.logo-mobile {
     max-width: 120px;
     height: auto;
 }
 
 /* Estilo modificado para la galería de imágenes */
-.gallery {
+.gallery-mobile {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,33 +38,45 @@
     padding: 20px;
 }
 
-.columna-galeria{
+.columna-galeria-mobile{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 320px;
 }
 
-.gallery-item {
+.gallery-item-mobile {
     position: relative; /* Para posicionar el overlay */
     overflow: hidden; /* Evita que el contenido salga del contenedor */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item img {
-    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
-    height: auto;
-    object-fit: cover; /* Asegura que la imagen ocupe todo el contenedor sin deformarse */
-    display: block;
+.sinZoom img {
+    width: 100%;
+    /*Lasimágenesocupantodoelanchodelcontenedor*/height: auto;
+    object-fit: cover;
+    /*Aseguraquelaimagenocupetodoelcontenedorsindeformarse*/display: block;
+    transform: scale(1);
     transition: transform 0.3s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1); /* Efecto de zoom */
+.conZoom img {
+    width: 100%;
+    transform: scale(1.1);
+    /*Efectodezoom*/object-fit: cover;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
 }
 
-.details {
+.sinZoom .details {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -69,7 +89,7 @@
     transition: opacity 0.3s;
 }
 
-.gallery-item:hover .details {
+.conZoom .details {
     opacity: 1; /* Muestra los detalles al pasar el cursor */
 }
 

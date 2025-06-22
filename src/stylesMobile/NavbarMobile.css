@@ -1,0 +1,49 @@
+:root{
+    --navbar-height:60px;
+  }
+
+
+  
+  #link-logo-nav-mobile {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo-nav-mobile {
+    height: 50px
+  }
+
+
+
+  .navbar-mobile {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: var(--navbar-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d4bd51;
+    color: #1e1e1e;
+    z-index: 1000;
+  }
+  
+  .navbar-mobile a {
+    font-family: 'NeoTech';
+    min-width: max-content;
+    max-width: min-content;
+    display: flex; /* Necesario para centrar contenido del <a> */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Si no quieres subrayado en el enlace */
+    height: 100%; /* Esto asegura que el contenedor ocupe toda la barra */
+  }
+
+  

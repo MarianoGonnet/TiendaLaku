@@ -16,6 +16,7 @@ import col3img3 from '../assets/galeria/buzoAdidas.jpg';
 const Galeria = () => {
   return (
     <section>
+<<<<<<< HEAD
       <Helmet>
         <title>Galería | Indumentaria Laku</title>
         <meta
@@ -48,6 +49,18 @@ const Galeria = () => {
             <div className="details">
               <p>Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.</p>
             </div>
+=======
+    <div class="logo-container">
+      <Link to='/'><img src={logo} alt="Logo de Laku" class="logo"></img></Link>
+    </div>
+    <h2 id='h2-galeria'>GALERIA</h2>
+    <div className="gallery">
+        <div className='columna-galeria'>
+        <div className="gallery-item">
+          <img src={col1img1} alt="Remera Blanca"></img>
+          <div className="details">
+            <p>Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.</p>
+>>>>>>> 8a2147a9120f96c8929aea4ed23d62bbc3bed8dd
           </div>
           <div className="gallery-item">
             <img src={col1img2} alt="Campera Negra" />

@@ -1,0 +1,113 @@
+.hero-mobile, #seccion-espiritu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    font-family: 'NeoTech';
+    background-color: #1e1e1e;
+    color: white;
+    height: 100svh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+
+  #fondo-hero-mobile, #imagen-espiritu-mobile {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100vh;
+    z-index: 0;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+  .degrade-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100svh;
+    background: linear-gradient(to bottom, transparent 5%,#1e1e1e 60%, #1e1e1e 70%);
+    z-index: 100;
+  }
+  
+  .hero-content-mobile, #texto-espiritu-mobile {
+    padding-top: 5rem;
+    position: relative;
+    display: flex;
+    min-height: min-content;
+    width: 100vw;
+    max-width: 400px;
+    height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+    color: #fff;
+    z-index: 500;
+  }
+  
+  
+  .hero-logo-mobile {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .hero-content-mobile p, #texto-espiritu-mobile p {
+    text-align:justify;
+    font-family: 'Leelawadee';
+    font-size: 1em;
+    max-width: 80vw;
+  }
+  
+  .hero-image-mobile {
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  .hero-button-mobile {
+    margin-top: 2rem;
+    font-family: 'NeoTech';
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #d4bd51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 200ms; 
+    white-space: nowrap;
+  }
+  
+  .hero-button-mobile a {
+  text-decoration: none;
+  }
+  
+  #divisor-mobile {
+  height: max-content;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#1e1e1e;
+  }
+  
+  #divisor-mobile h1{
+    display: block;
+  font-family: 'NeoTech';
+  font-size: 3rem;
+  color:#1e1e1e;
+  text-align: center;
+  }
+  
+  
+  
+  

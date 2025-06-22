@@ -5,14 +5,14 @@
 #flotantes{
     width: var(--ancho-de-barra);
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 10px;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap:calc(var(--ancho-de-barra)/3);
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .flotante{
@@ -24,23 +24,13 @@
  -ms-border-radius: 50%;
  -o-border-radius: 50%;
  background-color: #d4bd51;
- display: flex;
- justify-content: center;
- align-items: center;
- transition: all 0.1s ease-in ;
- -webkit-transition: all 0.1s ease-in ;
- -moz-transition: all 0.1s ease-in ;
- -ms-transition: all 0.1s ease-in ;
- -o-transition: all 0.1s ease-in ;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 0px 3px gray;
 }
 
-.flotante:hover{
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
+
 
 .flotante a img{
     display: block;
