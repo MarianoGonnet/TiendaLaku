@@ -16,51 +16,28 @@ import col3img3 from '../assets/galeria/buzoAdidas.jpg';
 const Galeria = () => {
   return (
     <section>
-<<<<<<< HEAD
       <Helmet>
         <title>Galería | Indumentaria Laku</title>
         <meta
           name="description"
-          content="Descubrí nuestra colección de ropa urbana en Indumentaria Laku. Calidad, precio y estilo al alcance de todos."
+          content="Explorá nuestra galería de productos urbanos. Calidad, estilo y precio justo desde Mar del Plata."
         />
-        <meta
-          name="keywords"
-          content="galería de ropa, tienda de ropa, indumentaria, moda urbana, catálogo, productos Laku"
-        />
-        <meta property="og:title" content="Galería | Indumentaria Laku" />
-        <meta
-          property="og:description"
-          content="Conocé nuestras prendas destacadas en la galería de Indumentaria Laku. Tu estilo empieza acá."
-        />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:type" content="website" />
       </Helmet>
 
       <div className="logo-container">
-        <Link to="/"><img src={logo} alt="Logo de Laku" className="logo" /></Link>
+        <Link to='/'><img src={logo} alt="Logo de Laku" className="logo" /></Link>
       </div>
 
-      <h1>GALERÍA</h1>
+      <h2 id="h2-galeria">GALERÍA</h2>
 
       <div className="gallery">
+        {/* Columna 1 */}
         <div className="columna-galeria">
           <div className="gallery-item">
             <img src={col1img1} alt="Remera Blanca" />
             <div className="details">
               <p>Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.</p>
             </div>
-=======
-    <div class="logo-container">
-      <Link to='/'><img src={logo} alt="Logo de Laku" class="logo"></img></Link>
-    </div>
-    <h2 id='h2-galeria'>GALERIA</h2>
-    <div className="gallery">
-        <div className='columna-galeria'>
-        <div className="gallery-item">
-          <img src={col1img1} alt="Remera Blanca"></img>
-          <div className="details">
-            <p>Remera Blanca - 100% algodón, suave y cómoda, ideal para el día a día.</p>
->>>>>>> 8a2147a9120f96c8929aea4ed23d62bbc3bed8dd
           </div>
           <div className="gallery-item">
             <img src={col1img2} alt="Campera Negra" />
@@ -76,6 +53,7 @@ const Galeria = () => {
           </div>
         </div>
 
+        {/* Columna 2 */}
         <div className="columna-galeria">
           <div className="gallery-item">
             <img src={col2img1} alt="Buzo Marrón" />
@@ -97,6 +75,7 @@ const Galeria = () => {
           </div>
         </div>
 
+        {/* Columna 3 */}
         <div className="columna-galeria">
           <div className="gallery-item">
             <img src={col3img1} alt="Babucha Puma" />
